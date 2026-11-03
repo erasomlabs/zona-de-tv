@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Zona de TV</string>
+    <string name="hint_url">Pega aquí la URL de la lista M3U</string>
+    <string name="btn_load">Cargar lista</string>
+    <string name="btn_watch">Ver tele</string>
+    <string name="btn_back">Atrás</string>
+    <string name="no_channels">Sin canales cargados</string>
+    <string name="loading">Cargando...</string>
+    <string name="error_load">Error al cargar la lista</string>
+    <string name="url_required">Ingresa una URL válida</string>
+</resources>
