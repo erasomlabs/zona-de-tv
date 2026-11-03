@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zona de TV | Reproductor M3U/IPTV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: { extend: { colors: { charcoal: '#1E2229', cyan: '#00D9FF', sand: '#F7F4F0', dark: '#0A0A0F' } } }
+        }
+    </script>
+</head>
+<body class="bg-dark text-white font-sans antialiased">
+    <header class="py-12 px-6 text-center border-b border-cyan/30">
+        <div class="w-20 h-20 mx-auto rounded-lg bg-cyan/20 flex items-center justify-center mb-4 border border-cyan">
+            <span class="text-4xl">📺</span>
+        </div>
+        <h1 class="text-3xl font-bold text-cyan">Zona de TV</h1>
+        <p class="font-medium mt-1 text-gray-300">Reproductor M3U / IPTV</p>
+        <p class="max-w-xl mx-auto mt-3 text-sm text-gray-400">Carga listas desde URL (iptv-org) o archivo local. Selector de canales sin logos para carga rápida. Interfaz sencilla y limpia.</p>
+    </header>
+    <main class="max-w-4xl mx-auto px-6 py-10">
+        <div class="grid md:grid-cols-3 gap-4">
+            <div class="bg-gray-900 rounded-xl p-4 border border-cyan/30 text-center">
+                <div class="text-3xl mb-2">🌐</div>
+                <h3 class="text-cyan font-bold text-sm">Cargar desde URL</h3>
+                <p class="text-gray-500 text-xs">Pega enlace de iptv-org o cualquier lista M3U</p>
+            </div>
+            <div class="bg-gray-900 rounded-xl p-4 border border-cyan/30 text-center">
+                <div class="text-3xl mb-2">📁</div>
+                <h3 class="text-cyan font-bold text-sm">Abrir archivo M3U</h3>
+                <p class="text-gray-500 text-xs">Selecciona un archivo local del dispositivo</p>
+            </div>
+            <div class="bg-gray-900 rounded-xl p-4 border border-cyan/30 text-center">
+                <div class="text-3xl mb-2">▶️</div>
+                <h3 class="text-cyan font-bold text-sm">Ver tele</h3>
+                <p class="text-gray-500 text-xs">Reproduce con ExoPlayer integrado</p>
+            </div>
+        </div>
+        <div class="text-center mt-10">
+            <p class="text-gray-500 text-sm mb-4">Disponible en Google Play Store</p>
+            <a href="https://erasomlabs.netlify.app" class="text-cyan hover:underline text-sm">&larr; Volver a Eraso M Labs</a>
+        </div>
+    </main>
+    <footer class="border-t border-gray-800 py-6 text-center text-gray-600 text-sm">
+        <p>&copy; 2026 Zona de TV — Eraso M Labs</p>
+    </footer>
+</body>
+</html>
