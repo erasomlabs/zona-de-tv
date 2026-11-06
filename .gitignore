@@ -24,3 +24,12 @@ out/
 # OS
 .DS_Store
 Thumbs.db
+
+# Netlify staging
+.deploy/
+
+# Netlify agent skills
+.agents/
+
+# Build artifacts
+03_build/
