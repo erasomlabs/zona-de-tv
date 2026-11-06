@@ -5,7 +5,7 @@
 # Cómo abrir este proyecto:
 # 1. Abre Android Studio.
 # 2. Selecciona "Open" y busca la carpeta:
-#    D:\Antigravity\20@erasomlabs\zonadetv\01_src
+#    D:\Antigravity\erasomlabs\zonadetv\01_src
 # 3. Espera a que Gradle sincronice y descargue las dependencias.
 # 4. Conecta un dispositivo Android o inicia un emulador.
 # 5. Haz clic en Run (▶) para compilar e instalar.

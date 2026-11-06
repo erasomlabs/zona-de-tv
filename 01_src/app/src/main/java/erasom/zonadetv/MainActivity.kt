@@ -11,9 +11,10 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.edit
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.google.android.exoplayer2.MediaItem
-import com.google.android.exoplayer2.SimpleExoPlayer
-import com.google.android.exoplayer2.ui.PlayerView
+import androidx.media3.common.MediaItem
+import androidx.media3.exoplayer.ExoPlayer
+import androidx.media3.ui.PlayerView
+import erasom.zonadetv.databinding.ActivityMainBinding
 import java.io.BufferedReader
 import java.io.InputStream
 import java.net.HttpURLConnection
@@ -22,7 +23,7 @@ import java.net.URL
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
-    private lateinit var player: SimpleExoPlayer
+    private lateinit var player: ExoPlayer
     private lateinit var adapter: ChannelAdapter
     private lateinit var prefs: SharedPreferences
 
@@ -40,7 +41,7 @@ class MainActivity : AppCompatActivity() {
         prefs = getSharedPreferences("zonadetv_prefs", MODE_PRIVATE)
 
         // Inicializar ExoPlayer
-        player = SimpleExoPlayer.Builder(this).build()
+        player = ExoPlayer.Builder(this).build()
         binding.playerView.player = player
 
         // Inicializar RecyclerView
@@ -52,7 +53,7 @@ class MainActivity : AppCompatActivity() {
 
         // Cargar última URL guardada
         val lastUrl = prefs.getString("last_url", "")
-        if (lastUrl.isNotEmpty()) {
+        if (!lastUrl.isNullOrEmpty()) {
             binding.etUrl.setText(lastUrl)
         }
 
